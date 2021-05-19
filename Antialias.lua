@@ -16,7 +16,7 @@ local function fillPixel(x, y)
 end
 
 local function isTransparent(pixel)
-    return pixel == 0
+    return Color(pixel).alpha == 0
 end
 
 for x = 0, width do
